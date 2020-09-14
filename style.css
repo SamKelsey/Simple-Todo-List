@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, orange, white);
+}
+
+body h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: grey;
+  padding: 20px;
+}
+
+.input-wrapper,
+.todo-list-wrapper {
+  text-align: center;
+}
+
+.input-wrapper button {
+  margin: 0 10px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 2px 15px;
+  background-color: white;
+  transition: 0.3s;
+}
+.input-wrapper button:hover {
+  border: 2px solid white;
+  background-color: orange;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.input-wrapper input {
+  border-radius: 0 3px 0 3px;
+  border: 1px solid black;
+  height: 20px;
+  transition: 0.3s;
+}
+.input-wrapper input:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+
+.input-wrapper input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+.todo-list {
+  padding: 0;
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  margin: 20px auto;
+  width: 50%;
+  min-width: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.todo button {
+  background-color: #c1292e;
+  color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.todo button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.fas,
+.fa-trash {
+  pointer-events: none;
+}
